@@ -1,0 +1,52 @@
+intent: homeauto
+debug: False
+min_score: 0.0008
+
+process: homeauto.process
+
+dialog:
+  ask: ['util']
+  action: process(util)
+
+entity:
+  - name: util
+    followup: homeauto
+    method: ask
+    type: inlist
+    required: True
+    value: None
+    prompt: "alat apa?"
+    list:
+      - 'lampu'
+      - 'kipas'
+      - 'televisi'
+      - 'TV'
+      - 'kipas angin'
+      - 'pemasak'
+      - 'pintu'
+      - 'jendela'
+      - 'pompa'
+      - 'alarm'
+
+  - name: ruang
+    followup: homeauto
+    method: ask
+    type: inlist
+    required: True
+    value: None
+    prompt: "Ruangan mana?"
+    list:
+      - 'ruang tamu'
+      - 'ruang kaca'
+      - 'ruang televisi'
+      - 'ruang TV'
+      - 'ruang tengah'
+      - 'ruangan tamu'
+      - 'ruangan kaca'
+      - 'ruangan televisi'
+      - 'ruangan TV'
+      - 'ruangan tengah'
+      - 'ruangan tidur'
+      - 'ruang makan'
+      - 'dapur'
+      - 'kamar inang'

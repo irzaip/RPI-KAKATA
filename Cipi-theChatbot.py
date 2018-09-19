@@ -8,11 +8,11 @@ import sys
 import logging
 logging.basicConfig(format='%(message)s', level=logging.DEBUG, stream=sys.stdout)
 
-from library/listens import *
+from listens import *
 import keras
-from library/preprocess import *
-from library/chat_iface import *
-from library/chat_proc import *
+from preprocess import *
+from chat_iface import *
+from chat_proc import *
 
 
 # In[2]:
