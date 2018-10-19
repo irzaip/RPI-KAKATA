@@ -1,0 +1,17 @@
+tensorflow==1.8.0
+keras==2.2.0
+tqdm==4.26.0
+sounddevice==0.3.12
+soundfile==0.10.2
+librosa==0.6.2
+Sastrawi==1.0.1
+selenium==3.14.1
+gensim==3.6.0
+pyaudio==0.2.11
+nltk==3.2.5
+google-cloud-speech==0.36.0
+google-cloud-storage==1.13.0
+gTTS==2.0.1
+
+
+
